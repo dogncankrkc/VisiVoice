@@ -1,0 +1,21 @@
+120 hız limiti levhası
+30 hız limiti levhası
+40 hız limiti levhası
+50 hız limiti levhası
+70 hız limiti levhası
+90 hız limiti levhası
+dur levhası
+araçlar için yeşil ışık
+sola dönülmez levhası
+araçlar için sarı ışık
+araçlar için kırmızı ışık
+girilmez levhası
+yol ver levhası
+yaya geçidi
+yaya geçidi levhası
+20 hız limiti levhası
+park levhası
+durak levhası
+yayalar için kırmızı ışık
+yayalar için yeşil ışık
+metro levhası

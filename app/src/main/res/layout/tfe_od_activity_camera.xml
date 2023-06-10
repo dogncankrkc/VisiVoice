@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <!-- Bir RelativeLayout bileşeni -->
+    <!-- Ekranın tamamını kaplayan ana düzen -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#080202"
+        android:orientation="vertical">
+
+        <!-- Bir Toolbar bileşeni -->
+        <!-- Üstte yer alan özel bir araç çubuğu -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="#080202">
+
+            <!-- Bir ImageView bileşeni -->
+            <!-- Logoyu göstermek için kullanılan görüntü -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/logo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Bir FrameLayout bileşeni -->
+        <!-- Kamera önizleme görüntüsünün tutulduğu alan -->
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="96dp"
+            app:layout_anchorGravity="center"
+            tools:context="org.tensorflow.demo.CameraActivity">
+
+            <!-- Bir TextureView bileşeni -->
+            <!-- Kamera önizlemesi için kullanılan görüntü bileşeni -->
+            <TextureView
+                android:id="@+id/texture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <!-- Bir LinearLayout bileşeni -->
+        <!-- Altta yer alan bilgi metninin tutulduğu alan -->
+        <LinearLayout
+            android:id="@+id/bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#080202"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Bir TextView bileşeni -->
+            <!-- Bilgi metni göstermek için kullanılan metin bileşeni -->
+            <TextView
+                android:id="@+id/bottom_sheet_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="36dp"
+                android:gravity="center"
+                android:text="Bu uygulama görme engelli bireylere yardımcı olması için yapılmıştır."
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
